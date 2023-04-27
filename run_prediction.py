@@ -25,5 +25,5 @@ results = pandas.DataFrame(results, columns=['image', 'prediction'])
 print(results)
 
 
-# results.to_csv('new_images_prediction.csv', index=False)
+results.to_csv('new_images_prediction.csv', index=False)
 

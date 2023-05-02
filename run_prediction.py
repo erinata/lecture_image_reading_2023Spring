@@ -21,7 +21,6 @@ prediction = numpy.argmax(machine.predict_generator(new_data,steps = new_data_le
 
 results = [[new_data.filenames[i], prediction[i]]for i in range(new_data_length)]
 results = pandas.DataFrame(results, columns=['image', 'prediction'])
-
 print(results)
 
 
